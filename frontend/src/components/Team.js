@@ -60,7 +60,7 @@ const Team = () => {
     // this one gives the roster of the team
 
     const data = await fetch(
-      `http://data.nba.net/json/cms/noseason/team/${team}/roster.json`
+      `https://data.nba.net/json/cms/noseason/team/${team}/roster.json`
     );
     const items = await data.json();
     console.log(items.sports_content.roster.players.player);
