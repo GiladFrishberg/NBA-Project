@@ -88,7 +88,7 @@ const Team = () => {
     // this one gives the stats and rankings of the team
 
     const data = await fetch(
-      `http://data.nba.net/json/cms/2019/statistics/${team}/regseason_stats_and_rankings.json`
+      `https://data.nba.net/json/cms/2019/statistics/${team}/regseason_stats_and_rankings.json`
     );
     const itemsteam = await data.json();
     const newteamstats = itemsteam.sports_content.team.averages;
